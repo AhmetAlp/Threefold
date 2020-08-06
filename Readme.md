@@ -35,4 +35,3 @@ For delete a Customer with id, use -X request type(DELETE)
 ### Example: Delete a customer whose id is 5f2c029e1c38720d70237232
 > curl -X DELETE http://localhost:9000/api/delete/5f2c029e1c38720d70237232
 
-
