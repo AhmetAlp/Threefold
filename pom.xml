@@ -9,8 +9,8 @@
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
-	<name>vehicle-jpa-crud</name>
-	<description>Vehicle code assignment project for LeasePlan</description>
+	<name>customer-jpa-crud</name>
+	<description>Customer code assignment project for Threefold</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -49,6 +49,10 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+	    <dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-security</artifactId>
+	    </dependency>
 	</dependencies>
 
 	<build>
@@ -64,7 +68,7 @@
 		          <archive>
 		            <manifest>
 		              <addClasspath>true</addClasspath>
-		              <mainClass>com.leaseplan.vehicle.Application</mainClass>
+		              <mainClass>com.threefold.customer.Application</mainClass>
 		            </manifest>
 		          </archive>
 		        </configuration>

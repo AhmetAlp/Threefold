@@ -23,7 +23,7 @@ import com.threefold.customer.service.CustomerService;
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/customerapi")
 public class CustomerController {
 	@Autowired
 	private CustomerService customerService;
