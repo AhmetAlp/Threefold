@@ -42,20 +42,20 @@ public class CustomerController {
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@PostMapping("/create")
-	public Customer createVehicle(@Valid @RequestBody Customer customer) {
+	public Customer createCustomer(@Valid @RequestBody Customer customer) {
 		return customerService.createCustomer(customer);
 	}
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@DeleteMapping("/delete/{id}")
-	public Map<String, Boolean> deleteVehicle(@PathVariable(value = "id") String id)
+	public Map<String, Boolean> deleteCustomer(@PathVariable(value = "id") String id)
 			throws ResourceNotFoundException {
 		return customerService.deleteCustomer(id);
 	}
 		
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@PutMapping("/update/{id}")
-	public ResponseEntity<Customer> updateVehicle(@PathVariable(value = "id") String id,
+	public ResponseEntity<Customer> updateCustomer(@PathVariable(value = "id") String id,
 			@Valid @RequestBody Customer customerDetails) throws ResourceNotFoundException {
 		final Customer updatedVehicle = customerService.updateCustomer(id, customerDetails);
 		return ResponseEntity.ok(updatedVehicle);
