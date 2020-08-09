@@ -2,7 +2,7 @@
 The object is to create a linux container/image (docker) that will handle a full CRUDL microservice for a customer.
 
 # Microservice Basic Authentication Security
-For every process; **username:**user1 **password:**user1
+For every process; **username**:user1 **password**:user1
 
 # Microservice documentation
 You can find microservice OPEN API definition at http://localhost:9000/swagger-ui.html
